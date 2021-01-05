@@ -1,0 +1,57 @@
+.side_drawer_container {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 99;
+  transform: translateX(0);
+  transition: transform ease 0.5s;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  background-color: gold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeMenu {
+  transform: translateX(-100%);
+}
+.openMenu {
+  transform: translateX(0);
+}
+
+.drawer_nav {
+  height: 100%;
+}
+.drawer_nav nav {
+  height: 100%;
+}
+.drawer_nav nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  height: 100%;
+}
+
+.drawer_nav nav ul li {
+  list-style: none;
+}
+
+.drawer_nav nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.9rem;
+}

@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+.cont {
+  font-family: "Oswald", sans-serif;
+}
+
+.video_container_mobile {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.video_container_mobile video {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  position: absolute;
+}
+
+.desktop_hearder_container {
+  height: 90vh;
+  width: 100%;
+  display: none;
+}
+
+.car_img {
+  height: 70%;
+  width: 40%;
+  border-radius: 50%;
+  margin-left: 5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.cap {
+  position: absolute;
+  bottom: 40%;
+  left: 60%;
+}
+.cap button:hover {
+  background-color: rgba(0, 0, 0, 1) !important;
+}
+.car_item {
+  height: 80vh;
+  width: 100%;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .cont p {
+    font-size: 2.2rem !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .desktop_hearder_container {
+    display: block;
+  }
+  .video_container_mobile {
+    display: none;
+  }
+}

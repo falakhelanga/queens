@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+
+.mobile_nav {
+  width: 100%;
+  height: 70px;
+
+  background-color: black;
+  border-bottom: 3px solid gold;
+}
+
+.desktop_nav {
+  display: none;
+}
+
+.mobile_nav_header {
+  color: gold;
+  font-family: "Redressed", cursive;
+  font-size: 1.5rem;
+}
+
+.searching {
+  width: 95%;
+  border-radius: 0px 50px 50px 0px;
+  height: 40px;
+  background-color: white;
+  transform: translateX(-1000px);
+  transition: transform ease-in 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searching input {
+  border: none;
+  width: 98%;
+  outline: none;
+  font-size: 1rem;
+}
+
+.full_width {
+  transform: translateX(0px);
+}
+.mobile_nav_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search_div {
+  display: flex;
+  align-items: center;
+}
+.logo_div {
+  width: 76px;
+  height: 68px;
+}
+
+.mobile_search {
+  background-color: white;
+  border-radius: 50px;
+  padding: 5px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.mobile_search input {
+  border: none;
+  outline: none;
+}
+.mobile_search_icon {
+  color: white;
+}
+.burger {
+  color: white;
+  margin-right: 5px;
+}
+.mobile_logo {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.first_nav {
+  background-color: rgb(43, 46, 53);
+  width: 100%;
+  height: 40px;
+}
+
+.first_nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.desktop_nav_header {
+  font-size: 3.5rem;
+  color: gold;
+  font-family: "Redressed", cursive;
+}
+
+.third_nav {
+  width: 100%;
+  border-top: 1px solid gold;
+}
+.third_nav ul {
+  display: flex;
+}
+
+.third_nav ul li {
+  list-style: none;
+  padding: 8px;
+}
+
+.third_nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.third_nav ul li a:hover {
+  color: gold;
+  font-weight: bolder;
+}
+.second_nav {
+  background-color: rgb(37, 38, 43);
+  height: 150px;
+  width: 100%;
+  /* border-bottom: 1px solid gold;
+  border-top: 1px solid gold; */
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .m_ico {
+    margin-right: 1rem !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .mobile_nav {
+    display: none;
+  }
+  .desktop_nav {
+    display: block;
+  }
+}

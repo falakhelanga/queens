@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Home from "./screens/Home";
+import Main from "./sections/Main";
+import Navigation from "./sections/Navigation";
+import SideDrawer from "./sections/SideDrawer";
 
-function App() {
+const App = () => {
+  const [menuClose, setMenuClose] = React.useState(true);
+  const handleClose = (value) => {
+    console.log(value);
+    setMenuClose(value);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <SideDrawer handleClose={handleClose} menuClose={menuClose} />
+        <Navigation handleClose={handleClose} />
+        <Main>
+          <Home />
+        </Main>
+      </Router>
     </div>
   );
-}
+};
 
 export default App;
